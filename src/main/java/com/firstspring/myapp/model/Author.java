@@ -12,17 +12,17 @@ public class Author {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private int auth_id;
+    private int id;
     private String name;
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
     public int getId() {
-        return this.auth_id;
+        return this.id;
     }
 
     public void setId(int id) {
-        this.auth_id = id;
+        this.id = id;
     }
 
     public String getName() {

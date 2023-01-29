@@ -10,15 +10,15 @@ public class Address {
     
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO) 
-    private int add_id;
+    private int id;
     private String city;
     private String state;
     private int pinCode;
     public int getId() {
-        return add_id;
+        return id;
     }
     public void setId(int id) {
-        this.add_id = id;
+        this.id = id;
     }
     public String getCity() {
         return city;
